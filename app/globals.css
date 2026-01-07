@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-main: #00274b;
+  --color-secondary: #b1d9ff;
+  --color-tertiary: #d5ebff;
+}
+
+:root {
+  --main: #00274b;
+  --secondary: #b1d9ff;
+  --tertiary: #d5ebff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom utility classes for our color palette */
+.bg-main { background-color: #00274b; }
+.bg-secondary { background-color: #b1d9ff; }
+.bg-tertiary { background-color: #d5ebff; }
+
+.text-main { color: #00274b; }
+.text-secondary { color: #b1d9ff; }
+.text-tertiary { color: #d5ebff; }
+
+.border-main { border-color: #00274b; }
+.border-secondary { border-color: #b1d9ff; }
+.border-tertiary { border-color: #d5ebff; }
+
+.from-tertiary { --tw-gradient-from: #d5ebff; }
+.to-tertiary { --tw-gradient-to: #d5ebff; }
+
+.hover\:bg-tertiary:hover { background-color: #d5ebff; }
+.hover\:bg-secondary:hover { background-color: #b1d9ff; }
+
+.focus\:ring-main:focus { --tw-ring-color: #00274b; }
