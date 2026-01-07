@@ -2,9 +2,9 @@
 
 An AI-powered 360 Feedback Tool for Lendable employees and managers.
 
-# Video Intro
+# Introduction
 
-[insert video here]
+Please see a LendMe360 Intro video [here](https://www.loom.com/share/a46d44b3ab7a437c808646712f6b3abc).
 
 ## Features
 
@@ -19,6 +19,7 @@ An AI-powered 360 Feedback Tool for Lendable employees and managers.
 - **Backend + Auth** - Add Supabase authentication + DB schema
 - Remove hardcoded values
 - Make AI-Generated Summary Report in the Manager tab editable.
+- Add the possibility to include multiple people in one Feedback Request.
 
 ## Tech Stack
 
