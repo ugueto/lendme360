@@ -6,20 +6,27 @@ An AI-powered 360 Feedback Tool for Lendable employees and managers.
 
 Please see a LendMe360 Intro video [here](https://www.loom.com/share/a46d44b3ab7a437c808646712f6b3abc).
 
+# Views and Paths
+- Landing Page -> /
+- Sign In -> /login
+- App -> /dashboard
+
 ## Features
 
 - **Request Feedback** - Send feedback requests to colleagues
-- **Provide Feedback** - Respond using the Start/Stop/Continue framework
+- **Provide Feedback** - Give feedback using the Start/Stop/Continue framework
 - **Speech-to-Text** - Dictate feedback using OpenAI Whisper (Beta)
+- **Enhance with AI** - Enhance your feedback bullet points with OpenAI's GPT-5
 - **Manager Dashboard** - Review direct reports' feedback cycles and add notes
 - **Email Restriction** - Only @lendable.com and @lendable.co.uk domains allowed
+- **Feedback Report** - Build an AI-powered report at the end of your feedback process with OpenAI's GPT-5.
 
-## TO DO
+## TO DO:
 
 - **Backend + Auth** - Add Supabase authentication + DB schema
-- Remove hardcoded values
+- Remove all hardcoded values
 - Make AI-Generated Summary Report in the Manager tab editable.
-- Add the possibility to include multiple people in one Feedback Request.
+- Edit 'New Feedback Request' form to include the possibility of multiple reviewers in one form.
 
 ## Tech Stack
 
@@ -40,14 +47,17 @@ Please see a LendMe360 Intro video [here](https://www.loom.com/share/a46d44b3ab7
 ### Installation
 
 ```bash
-git clone https://github.com/your-org/lendme360.git
+git clone https://github.com/ugueto/lendme360.git
 cd lendme360
 npm install
 ```
 
 ### Environment Variables
 
-Create a `.env.local` file (you'll need these ENV vars for some functionality):
+> [IMPORTANT]  
+> Without an OpenAI API key, you will not be able to use any AI features.
+
+Create a `.env.local` file with the following:
 
 ```env
 NEXT_PUBLIC_SUPABASE_URL=your-supabase-project-url
